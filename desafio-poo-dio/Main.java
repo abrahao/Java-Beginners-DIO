@@ -1,6 +1,6 @@
 import java.time.LocalDate;
 
-import br.com.dio.desafio.dominio.*;;
+import br.com.dio.desafio.dominio.*;
 
 public class Main {
 
@@ -29,7 +29,20 @@ public class Main {
         mentoria2.setDescricao("Mentoria JS |");
         mentoria2.setData(LocalDate.now());
 
-        System.out.println(mentoria1);
-        System.out.println(mentoria2);
+        Bootcamp bootcamp = new Bootcamp();
+        bootcamp.setNome("Bootcamp Java Developer");
+        bootcamp.setDescricao("Descricao do bootcamp Java Developer");
+        bootcamp.getConteudos().add(curso1);
+        bootcamp.getConteudos().add(curso2);
+        bootcamp.getConteudos().add(mentoria1);
+
+        Dev devAbrahao = new Dev();
+        devAbrahao.setNome("abrahao");
+        Dev devJoao = new Dev();
+        devJoao.setNome("Joao");
+
+
+        // System.out.println(mentoria1);
+        // System.out.println(mentoria2);
     }
 }
